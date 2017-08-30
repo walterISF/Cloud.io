@@ -10,9 +10,9 @@ target/
 .springBeans
 
 ### IntelliJ IDEA ###
-workspace.xml
+.idea/workspace.xml
 .idea
-.idea/
+
 *.iws
 *.iml
 *.ipr

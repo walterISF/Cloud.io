@@ -22,7 +22,6 @@ public class ClientController {
     public List<Client> findAllClients(){
 
         return clientService.findAllClients();
-
     }
 
 }

@@ -4,6 +4,8 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Data
 @Document(collection="sistemasOperacionais")
 public class SistemaOperacional {
@@ -13,7 +15,7 @@ public class SistemaOperacional {
 
     private String nomeSistemaOperacional;
 
-    private String versaoSistemaOperacional;
+    private List<String> versaoSistemaOperacional;
 
     private String caminhoIcone;
 

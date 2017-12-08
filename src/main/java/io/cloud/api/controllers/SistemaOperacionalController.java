@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value="/sistemaOperacional")
-@CrossOrigin(allowedHeaders = "*")
+@CrossOrigin(origins = "*")
 public class SistemaOperacionalController {
 
     @Autowired

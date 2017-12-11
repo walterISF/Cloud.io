@@ -4,7 +4,9 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -23,6 +25,8 @@ public class Fatura {
     private Double valorTotalFatura;
 
     private Calendar dataReferenciaFatura;
+
+    private Calendar dataVencimentoFatura;
 
     private Status status;
 

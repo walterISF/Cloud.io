@@ -14,7 +14,7 @@ public class DropletService {
     private DropletRepository dropletRepository;
 
     public List<Droplet> obterTodosDropletsPorCliente(String id) {
-        return this.dropletRepository.findByClientePessoaFisica_IdCliente(id);
+        return this.dropletRepository.findByClientePessoaFisica_Cpf(id);
     }
 
     public Droplet salvarDroplet(Droplet droplet){

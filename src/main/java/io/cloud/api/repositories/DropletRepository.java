@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface DropletRepository extends MongoRepository<Droplet, String> {
 
-    List<Droplet> findByClientePessoaFisica_IdCliente(String id);
+    List<Droplet> findByClientePessoaFisica_Cpf(String id);
 }

@@ -8,5 +8,9 @@ import java.util.List;
 
 @Repository
 public interface FaturaRepository extends MongoRepository<Fatura, String> {
-    List<Fatura> findByClienteAndStatus(String id, Fatura.Status status);
+    List<Fatura> findByCliente_CpfAndStatus(String idCliente, Fatura.Status status);
+
+    List<Fatura> findByStatus(Fatura.Status naopaga);
+
+    List<Fatura> findByCliente_Cpf(String idCliente);
 }

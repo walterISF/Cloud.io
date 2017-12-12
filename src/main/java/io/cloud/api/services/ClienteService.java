@@ -49,6 +49,6 @@ public class ClienteService {
     }
 
     public ClientePessoaFisica obterClientePorLogin(String email) {
-        return this.clientePessoaFisicaRepository.findByLogin_Email(email);
+        return this.clientePessoaFisicaRepository.findByLoginCliente_Email(email);
     }
 }

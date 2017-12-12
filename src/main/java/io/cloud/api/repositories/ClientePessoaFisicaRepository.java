@@ -11,5 +11,5 @@ public interface ClientePessoaFisicaRepository extends MongoRepository<ClientePe
 
     List<ClientePessoaFisica> findAllByStatus(ClientePessoaFisica.Status status);
 
-    ClientePessoaFisica findByLogin_Email(String email);
+    ClientePessoaFisica findByLoginCliente_Email(String email);
 }

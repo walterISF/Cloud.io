@@ -47,4 +47,8 @@ public class ClienteService {
         cliente.setStatus(ClientePessoaFisica.Status.INATIVO);
         clientePessoaFisicaRepository.save(cliente);
     }
+
+    public ClientePessoaFisica obterClientePorLogin(String email) {
+        return this.clientePessoaFisicaRepository.findByLogin_Email(email);
+    }
 }

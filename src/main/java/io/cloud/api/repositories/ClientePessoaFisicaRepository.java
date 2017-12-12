@@ -10,4 +10,6 @@ import java.util.List;
 public interface ClientePessoaFisicaRepository extends MongoRepository<ClientePessoaFisica, String> {
 
     List<ClientePessoaFisica> findAllByStatus(ClientePessoaFisica.Status status);
+
+    ClientePessoaFisica findByLogin_Email(String email);
 }

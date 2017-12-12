@@ -14,7 +14,7 @@ public class LoginController {
     @Autowired
     LoginService loginService;
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
+    @RequestMapping(value = "", method = RequestMethod.POST)
     public ClientePessoaFisica validarLogin(@RequestBody Login login){
         return this.loginService.validarLogin(login);
     }
